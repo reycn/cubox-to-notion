@@ -1,3 +1,5 @@
+<img src="./assets/banner.jpg"/></img>
+
 # Cubox to Notion
 
 A lightweight tool for Notion users to utilize Cubox services (web-clipping, WeChat clipping).
