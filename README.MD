@@ -6,7 +6,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/reycn/cubox-to-notion) [![codebeat badge](https://codebeat.co/badges/ffea9c86-2b10-45b9-b4cc-d7cb35bbde4d)](https://codebeat.co/projects/github-com-reycn-cubox-to-notion-main) ![License](https://img.shields.io/badge/license-MIT-000000.svg)  
 A slight tool for [Notion](https://www.notion.so/) users to integrate [Cubox](https://cubox.pro/) service.
 
-**Motivation**: In most cases (including WeChat/web clipping), Cubox is more decent solution to collect something, however, Notion is more capable for managing and utilize them.
+**Motivation**: In most cases (including WeChat/web clipping), Cubox is a decent solution to collect something, however, Notion is more capable for managing and utilizing them.
 
 **Next Update**: planned before October.
 
