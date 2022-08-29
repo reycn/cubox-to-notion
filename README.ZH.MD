@@ -12,18 +12,18 @@
 
 # 特性 ✨
 
--   **TOTALLY FREE**
--   Cubox contents -> Notion, currently supporting
+-   **完全免费**
+-   同步 Cubox 内容 -> Notion，支持：
 
-    -   Basic information, including title, descriptionc, link, tags
-    -   Cubox properties, including link, full-text (planned), created time (planned)
+    -   基础信息, 包括标题、描述、链接、标签
+    -   Cubox 属性, 包括链接, 全文 (计划支持), 创建时间 (计划支持)
 
--   Consecutive, incremental synchronization
--   Duplication detection & control
--   Automatic deletion & control
--   Improved speed
--   Multiple folders (implemented, not tested though)
--   Select folder by name (planned)
+-   连续、增量式更新
+-   重复检测和控制
+-   自动删除和控制
+-   优化后的速度
+-   多文件夹同步 (实现但暂未测试)
+-   通过文件夹名称选择文件夹 (计划支持)
 
 # 运行概览
 
