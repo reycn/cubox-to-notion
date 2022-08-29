@@ -1,6 +1,6 @@
 <img src="./assets/banner.jpg"/></img>
 
-# Cubox to Notion
+# Cubox to Notion [ Engligh | [中文](./README.ZH.MD) ]
 
 ![version](https://img.shields.io/badge/version-alpha-red)
 ![GitHub top language](https://img.shields.io/github/languages/top/reycn/cubox-to-notion) [![codebeat badge](https://codebeat.co/badges/ffea9c86-2b10-45b9-b4cc-d7cb35bbde4d)](https://codebeat.co/projects/github-com-reycn-cubox-to-notion-main) ![License](https://img.shields.io/badge/license-MIT-000000.svg)  
