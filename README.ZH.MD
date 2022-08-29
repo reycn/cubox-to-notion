@@ -81,6 +81,11 @@
     -   [Notion, 官方](https://developers.notion.com/), 直接迅速的 HTTP 交互
     -   [ Cubox, 非官方](https://github.com/reycn/cubox-to-notion), 因为官方 API 不支持完成本项目任务 : )
 
+## 支持作者
+
+-   点点小 🌟
+-   去[爱发电赞助](https://afdian.net/@reynd)
+
 ## 许可证
 
 此项目经由 [MIT LICENSE](LICENSE) 授权。

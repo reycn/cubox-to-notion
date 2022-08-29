@@ -81,6 +81,11 @@ In a word, we utilized the potential of Scrapy.
     -   [Notion, official](https://developers.notion.com/), directly and rapidly interacted in HTTP
     -   [ Cubox, unofficial](https://github.com/reycn/cubox-to-notion), since the official one is not sufficient to accomplish our task : )
 
+## Support the Author
+
+-   Click 🌟
+-   Donation through [afdian](https://afdian.net/@reynd)
+
 ## LICENSE
 
 Permission is hereby granted in [MIT LICENSE](LICENSE)
