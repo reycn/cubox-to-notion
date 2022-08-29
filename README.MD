@@ -80,6 +80,8 @@ In a word, we utilized the potential of Scrapy.
 -   API
     -   [Notion, official](https://developers.notion.com/), directly and rapidly interacted in HTTP
     -   [ Cubox, unofficial](https://github.com/reycn/cubox-to-notion), since the official one is not sufficient to accomplish our task : )
+-   See: [architecture](https://app.tryeraser.com/workspace/xYpHHokfhmbpjrVowqsb?origin=share)
+    <img src="./assets/architecture.png"/></img>
 
 ## Support the Author
 

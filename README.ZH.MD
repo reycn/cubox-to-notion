@@ -78,8 +78,12 @@
 -   [Scrapy](https://github.com/scrapy/scrapy), 获取和解析 Cubox 内容
 -   [Requests](https://github.com/psf/requests), 在两个产品之间交互
 -   API
+
     -   [Notion, 官方](https://developers.notion.com/), 直接迅速的 HTTP 交互
     -   [ Cubox, 非官方](https://github.com/reycn/cubox-to-notion), 因为官方 API 不支持完成本项目任务 : )
+
+-   查看 [软件架构](https://app.tryeraser.com/workspace/xYpHHokfhmbpjrVowqsb?origin=share)
+    <img src="./assets/architecture.png"/></img>
 
 ## 支持作者
 
