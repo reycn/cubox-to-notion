@@ -84,7 +84,7 @@ In a word, we utilized the potential of Scrapy.
 ## Support the Author
 
 -   Click 🌟
--   Donation through [afdian](https://afdian.net/@reynd)
+-   Donation through [afdian](https://afdian.net/@reynd/plan)
 
 ## LICENSE
 
