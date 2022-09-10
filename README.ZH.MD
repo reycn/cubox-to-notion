@@ -39,7 +39,7 @@
 -   URL, `link`
 -   Cubox, `link`
 -   Tags, `multiple selection`
--   Type, `selection`
+-   Type, `selection`, 当前版本需要添加一个 'Cubox' 项，下版自动处理
 
 (2) 复制你的数据库 id 至 `config.ini`(模板参见 `config.template.ini`，下同)  
 (3) 创建一个 Notion 机器人，复制秘钥至 `config.ini`  

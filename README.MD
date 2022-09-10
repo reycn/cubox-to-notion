@@ -39,7 +39,7 @@ A slight tool for [Notion](https://www.notion.so/) users to integrate [Cubox](ht
 -   URL, `link`
 -   Cubox, `link`
 -   Tags, `multiple selection`
--   Type, `selection`
+-   Type, `selection`, a default item 'Cubox' required
 
 (2) copy your Notion database id, to `config.ini`(template found at `config.template.ini`)  
 (3) create a Notion Bot, get a key, and copy to `config.ini`  
