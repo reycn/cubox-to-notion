@@ -15,6 +15,8 @@ A slight tool for [Notion](https://www.notion.so/) users to integrate [Cubox](ht
 -   **Full-text suport** (experimental, dute to API limis, some article will be fallback to description)
 -   Improved speed by locah chache control
 -   Issue fixed: [No.5](https://github.com/reycn/cubox-to-notion/issues/5])
+-   Action needed after updating：
+    `pip install -r requirements.txt` to update requirements
 
 # Features
 

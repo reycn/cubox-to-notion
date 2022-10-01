@@ -15,6 +15,8 @@
 -   **全文支持**，支持图片、代码、链接等内容(实验性，部分内容因 API /上游限制待解决)
 -   更快的同步速度，通过引入本地缓存
 -   解决 [Issue No.5](https://github.com/reycn/cubox-to-notion/issues/5]) 提及的问题
+-   更新至本版本，需要：
+    `pip install -r requirements.txt` 更新依赖
 
 # 特性 ✨
 
