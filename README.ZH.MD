@@ -1,14 +1,20 @@
-<img src="./assets/banner.jpg"/></img>
+`<img src="./assets/banner.jpg"/></img>`
 
 # Cubox to Notion [ [Engligh](./README.MD) | 中文 ]
 
 ![version](https://img.shields.io/badge/version-alpha-red)
-![GitHub top language](https://img.shields.io/github/languages/top/reycn/cubox-to-notion) [![codebeat badge](https://codebeat.co/badges/ffea9c86-2b10-45b9-b4cc-d7cb35bbde4d)](https://codebeat.co/projects/github-com-reycn-cubox-to-notion-main) ![License](https://img.shields.io/badge/license-MIT-000000.svg)  
+![GitHub top language](https://img.shields.io/github/languages/top/reycn/cubox-to-notion) [![codebeat badge](https://codebeat.co/badges/ffea9c86-2b10-45b9-b4cc-d7cb35bbde4d)](https://codebeat.co/projects/github-com-reycn-cubox-to-notion-main) ![License](https://img.shields.io/badge/license-MIT-000000.svg)
 为 [Notion](https://www.notion.so/) 用户提供的利用 [Cubox](https://cubox.pro/) 服务的轻量工具.
 
 **项目动机**: 在大多数情况下（包括微信收藏/网络剪藏），Cubox 是一个来收集东西的优雅方案，但 Notion 在管理和利用这些信息时更加擅长。
 
-**下次更新**: 计划在 10 月份以前。
+**下次更新**: 计划在 23 年 1 月份以前。
+
+# 更新说明（十月）✨
+
+-   **全文支持**，支持图片、代码、链接等内容(实验性，部分内容因 API /上游限制待解决)
+-   更快的同步速度，通过引入本地缓存
+-   解决 [Issue No.5](https://github.com/reycn/cubox-to-notion/issues/5]) 提及的问题
 
 # 特性 ✨
 
@@ -27,7 +33,7 @@
 
 # 运行概览
 
-<img src="./assets/cubox-to-notion.gif"/></img>
+`<img src="./assets/cubox-to-notion.gif"/></img>`
 
 # 开始使用
 
@@ -41,22 +47,21 @@
 -   Tags, `multiple selection`
 -   Type, `selection`, 当前版本需要添加一个 'Cubox' 项，下版自动处理
 
-(2) 复制你的数据库 id 至 `config.ini`(模板参见 `config.template.ini`，下同)  
-(3) 创建一个 Notion 机器人，复制秘钥至 `config.ini`  
+(2) 复制你的数据库 id 至 `config.ini`(模板参见 `config.template.ini`，下同)
+(3) 创建一个 Notion 机器人，复制秘钥至 `config.ini`
 (4) 邀请机器人到对应数据库，确保机器人具备 **写入** 权限
 
 ## 2. 获取 Cubox 秘钥和定位同步文件夹
 
-(1) 先登录，然后复制存储在浏览器 cookies 中的 `token` 至 `config.ini`  
-(需要以 `"` 包裹因为 Cubox 的 token 有一个 `=`)  
+(1) 先登录，然后复制存储在浏览器 cookies 中的 `token` 至 `config.ini`
+(需要以 `"` 包裹因为 Cubox 的 token 有一个 `=`)
 (2) 复制你的文件夹 id 到 `config.ini`
 
 ## 3. 开始工作
 
--   如果希望一直同步，请使用循环同步，运行:  
-    `python main.py`
--   如果希望运行一次同步一次，运行:  
-    `scrapy crawl cubox_to_notion -L ERROR` # 这里可以替换 `ERROR` 为 `INFO`, `CRITICAL` 等值自定义报错级别  
+-   如果希望一直同步，请使用循环同步，运行:`python main.py`
+-   如果希望运行一次同步一次，运行:
+    `scrapy crawl cubox_to_notion -L ERROR` # 这里可以替换 `ERROR` 为 `INFO`, `CRITICAL` 等值自定义报错级别
     _更详细教程即将到来_
 
 ## 需要 / 不需要
@@ -82,8 +87,12 @@
     -   [Notion, 官方](https://developers.notion.com/), 直接迅速的 HTTP 交互
     -   [ Cubox, 非官方](https://github.com/reycn/cubox-to-notion), 因为官方 API 不支持完成本项目任务 : )
 
+-   第三方仓库
+
+    -   [Notionfier](https://github.com/Arsenal591/notionfier), 用于 Markdown 全文上传
+
 -   查看 [软件架构](https://app.tryeraser.com/workspace/xYpHHokfhmbpjrVowqsb?origin=share)
-    <img src="./assets/architecture.png"/></img>
+    `<img src="./assets/architecture.png"/></img>`
 
 ## 支持作者
 

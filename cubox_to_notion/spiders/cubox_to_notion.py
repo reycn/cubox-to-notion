@@ -36,7 +36,7 @@ class QuotesSpider(scrapy.Spider):
                                      headers=headers)
         except:
             self.logger.error(
-                f"[Cubox] No valid token or groups found in config.ini, or your Cubox folder is empty"  # [x]TODO: folder emptiness detection
+                f"[Cubox] No valid token or groups found in config.ini, or your Cubox folder is empty"  #TODO: folder emptiness detection
             )
 
     def parse(self, response):
@@ -47,33 +47,39 @@ class QuotesSpider(scrapy.Spider):
                 token = cfg.get('notion', 'token')
                 database = cfg.get('notion', 'database')
                 fp.close()
-            articles = json.loads(response.body)["data"]
-            # self.record(response)
-            for article in articles:
-                self.logger.info(
-                    "================================================================================================================================="
-                )
-                item = ArticleItem()
-                self.logger.info(
-                    f"[Cubox] parsing a article: {article['title']}")
-                item["token"] = token
-                item["database"] = database
-                item["title"] = article['title'] if article['title'] else ""
-                item["url"] = article['targetURL'] if article[
-                    'targetURL'] else ""
-                item["tags"] = [tag['name'] for tag in article['tags']
-                                ] if article['tags'] else ""
-                item["content"] = article['description'] if article[
-                    'description'] else ""  # [x]TODO: add full text content
+            if json.loads(response.body)["data"]:
+                articles = json.loads(response.body)["data"]
+                # self.record(response)
+                for article in articles:
+                    self.logger.info(
+                        "================================================================================================================================="
+                    )
+                    item = ArticleItem()
+                    self.logger.info(
+                        f"[Cubox] parsing a article: {article['title']}")
+                    item["token"] = token
+                    item["database"] = database
+                    item[
+                        "title"] = article['title'] if article['title'] else ""
+                    item["url"] = article['targetURL'] if article[
+                        'targetURL'] else ""
+                    item["tags"] = [tag['name'] for tag in article['tags']
+                                    ] if article['tags'] else ""
+                    item["content"] = article['description'] if article[
+                        'description'] else ""  # INPROGRESS: add full text content
 
-                item["id"] = article['userSearchEngineID'] if article[
-                    'userSearchEngineID'] else ""
-                yield item
+                    item["id"] = article['userSearchEngineID'] if article[
+                        'userSearchEngineID'] else ""
+                    yield item
+            else:
+                self.logger.error(
+                    f"[Notion] no articles in Cubox found, plz make sure you have at least one artile to sync!"
+                )
         except:
             self.logger.error(
                 f"[Notion] No valid token or database found in config.ini")
 
-    #def detect_folder_name(self, response):# [x]TODO: add folder name detection
+    #def detect_folder_name(self, response):# TODO: add folder name detection
     def record(self, response):
         articles = json.loads(response.body)["data"]
         # articles_ids = [article["userSearchEngineID"] for article in articles]

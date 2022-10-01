@@ -8,15 +8,21 @@ A slight tool for [Notion](https://www.notion.so/) users to integrate [Cubox](ht
 
 **Motivation**: In most cases (including WeChat/web clipping), Cubox is a decent solution to collect something, however, Notion is more capable for managing and utilizing them.
 
-**Next Update**: planned before October.
+**Next Update**: planned before Jan, 23.
 
-# Features ✨
+# What's New in Oct.✨
+
+-   **Full-text suport** (experimental, dute to API limis, some article will be fallback to description)
+-   Improved speed by locah chache control
+-   Issue fixed: [No.5](https://github.com/reycn/cubox-to-notion/issues/5])
+
+# Features
 
 -   **TOTALLY FREE**
 -   Cubox contents -> Notion, currently supporting
 
     -   Basic information, including title, descriptionc, link, tags
-    -   Cubox properties, including link, full-text (planned), created time (planned)
+    -   Cubox properties, including link, full-text, created time (planned)
 
 -   Consecutive, incremental synchronization
 -   Duplication detection & control
@@ -80,6 +86,8 @@ In a word, we utilized the potential of Scrapy.
 -   API
     -   [Notion, official](https://developers.notion.com/), directly and rapidly interacted in HTTP
     -   [ Cubox, unofficial](https://github.com/reycn/cubox-to-notion), since the official one is not sufficient to accomplish our task : )
+-   Third-party module:
+    -   [Notionfier](https://github.com/Arsenal591/notionfier), for Markdown full-text support
 -   See: [architecture](https://app.tryeraser.com/workspace/xYpHHokfhmbpjrVowqsb?origin=share)
     <img src="./assets/architecture.png"/></img>
 

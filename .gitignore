@@ -11,7 +11,7 @@ pyvenv.cfg
 __pycache__/
 *.py[cod]
 *$py.class
-
+test
 # C extensions
 *.so
 
@@ -169,3 +169,4 @@ cython_debug/
 #.idea/
 lib64
 .gitignore
+saved_pages.pkl
