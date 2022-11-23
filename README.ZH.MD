@@ -1,4 +1,4 @@
-`<img src="./assets/banner.jpg"/></img>`
+<img src="./assets/banner.jpg"/></img>
 **通知：因为官方产品正在推出 [类似功能](https://mp.weixin.qq.com/s/nNRKjWixPl2AqlWd_qeDYQ), 我决定暂停此项目直至该功能发布。**
 # Cubox to Notion [ [Engligh](./README.MD) | 中文 ]
 
