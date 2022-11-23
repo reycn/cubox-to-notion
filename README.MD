@@ -1,5 +1,5 @@
 <img src="./assets/banner.jpg"/></img>
-**Notice: since the official product is introducing [a similar feature](https://mp.weixin.qq.com/s/nNRKjWixPl2AqlWd_qeDYQ), I decided to suspend this project untill its release.**
+**Notice: since the official product is introducing [a similar feature](https://mp.weixin.qq.com/s/nNRKjWixPl2AqlWd_qeDYQ), I decide to suspend this project untill its release.**
 
 # Cubox to Notion [ Engligh | [中文](./README.ZH.MD) ]
 
