@@ -95,7 +95,7 @@ class SaveToNotion:
     # Get basic info of a database
     def notion_get_database_id(self, database: str, headers: dict) -> str:
         url = f"https://api.notion.com/v1/databases/{database}/query"
-        r = requests.post(url, headers=headers)
+        r = requests.post(url, headers=headers, timeout=30)
         logging.info(f"[Notion] retrieving a database: {database}")
         if r.status_code == 200:
             database = r.json()["results"][0]["parent"]["database_id"]
@@ -146,7 +146,7 @@ class SaveToNotion:
                     "equals": type_name
                 }
             }})
-        r = requests.post(url, data=payload, headers=headers)
+        r = requests.post(url, data=payload, headers=headers, timeout=30)
         logging.debug(r.json()['results'][0]['id'])
         if r.status_code == 200:
             page_ids = [page['id'] for page in r.json()['results']]
@@ -193,7 +193,7 @@ class SaveToNotion:
                     "equals": type_name
                 }
             }})
-        r = requests.post(url, data=payload, headers=headers)
+        r = requests.post(url, data=payload, headers=headers, timeout=30)
         # logging.debug(r.text)
         # logging.debug(r.json()['results'][0])
         if r.status_code == 200:
@@ -220,7 +220,7 @@ class SaveToNotion:
                 }
             }})
         # print(payload)
-        r = requests.post(url, data=payload, headers=headers)
+        r = requests.post(url, data=payload, headers=headers, timeout=30)
 
         # print(r.json()['results'][0]['properties']['Cubox']['id'])
         if r.status_code == 200:
@@ -235,7 +235,7 @@ class SaveToNotion:
                                   headers: dict):
         url = f"https://api.notion.com/v1/pages/{page_id}/properties/{property_id}"
         # print(url)
-        r = requests.get(url, headers=headers)
+        r = requests.get(url, headers=headers, timeout=30)
         if r.status_code == 200:
             value = r.json()['url']
             # logging.critical(value)
@@ -263,7 +263,7 @@ class SaveToNotion:
                                                      type_sig)
                 # print(payload)
                 api = f"https://api.notion.com/v1/pages"
-                r = requests.post(api, data=payload, headers=headers)
+                r = requests.post(api, data=payload, headers=headers, timeout=30)
                 if r.status_code == 200:
                     self.PAGES_STORED[cubox_id] = cubox_url
                     self.notion_page_cache('write')
@@ -320,7 +320,7 @@ class SaveToNotion:
         data = f"type=md&engineIds={cubox_id}&snap=false&compressed=false"
         logging.debug(data)
         # logging.info(f"[Cubox] fetching fulltext of article: {cubox_id}")
-        r = requests.post(url, data=data, headers=headers)
+        r = requests.post(url, data=data, headers=headers, timeout=30)
         logging.debug(r.text)
         if r.text and (legacy == False):
             content = [
@@ -371,7 +371,7 @@ class SaveToNotion:
             headers = self.cubox_concat_header()
             data = f"searchEngines=%5B%7B%22userSearchEngineID%22%3A%22{cubox_id}%22%7D%5D"
             # logging.critical(data)
-            r = requests.post(url, data=data, headers=headers)
+            r = requests.post(url, data=data, headers=headers, timeout=30)
             if r.status_code == 200 and r.json()['code'] != -1:
                 logging.info(f"[Cubox] article deleted: {r.json()}")
             else:
